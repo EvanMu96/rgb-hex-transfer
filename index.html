@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/semantic-ui/2.1.8/components/form.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/semantic-ui/2.1.8/components/form.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/semantic-ui/2.1.8/components/button.min.css">
+    <style type="text/css">
+        .container {
+            margin: 10px auto;
+            padding: 10px;
+            width: 800px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: #000000;
+        }
+    </style> 
+    <title>RGB16进制转换器</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="ui form">
+            <div class="field">
+                <label>R</label>
+                <input type="text" name="R" id="rValue">
+            </div>
+            <div class="field">
+                <label>G</label>
+                <input type="text" name="G" id="gValue">
+            </div>
+            <div class="field">
+                <label>B</label>
+                <input type="text" name="B" id="bValue">
+            </div>
+            <button class="ui button" type="submit" onclick="btnHandle()">Transfer</button>
+        </form>
+    </div>
+</body>
+
+</html>
