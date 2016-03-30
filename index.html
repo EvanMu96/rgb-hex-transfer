@@ -11,14 +11,15 @@
     <style type="text/css">
         .container {
             margin: 10px auto;
-            padding: 10px;
-            width: 800px;
+            padding: 40px;
+            width: auto;
             height: 400px;
             overflow: hidden;
             border-radius: 10px;
             border-style: solid;
             border-color: #000000;
         }
+
     </style> 
     <title>RGB16进制转换器</title>
 </head>
@@ -26,18 +27,20 @@
 <body>
     <div class="container">
         <form class="ui form">
-            <div class="field">
+            <div class="ui field fluid">
                 <label>R</label>
-                <input type="text" name="R" id="rValue">
+                <input type="text" name="R" id="rValue" class="fluid">
             </div>
-            <div class="field">
+            <div class="ui field fluid" >
                 <label>G</label>
-                <input type="text" name="G" id="gValue">
+                <input type="text" name="G" id="gValue" class="input-bar">
             </div>
-            <div class="field">
+            <div class="field fluid">
                 <label>B</label>
-                <input type="text" name="B" id="bValue">
+                <input type="text" name="B" id="bValue" class="input-bar">
             </div>
+            <br />
+            <br />
             <button class="ui button" type="submit" onclick="btnHandle()">Transfer</button>
         </form>
     </div>
