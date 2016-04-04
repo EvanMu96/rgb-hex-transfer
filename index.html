@@ -3,11 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://cdn.bootcss.com/semantic-ui/2.1.8/components/form.js"></script>
-    <script type="text/javascript" src="main.js"></script>
     <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/semantic-ui/2.1.8/components/form.min.css">
     <link rel="stylesheet" href="http://cdn.bootcss.com/semantic-ui/2.1.8/components/button.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/semantic-ui/2.1.8/components/message.min.css">
     <style type="text/css">
         .container {
             margin: 10px auto;
@@ -29,21 +27,26 @@
         <form class="ui form">
             <div class="ui field fluid">
                 <label>R</label>
-                <input type="text" name="R" id="rValue" class="fluid">
+                <input type="text" name="R" id="rValue" class="fluid" onchange="able()">
             </div>
             <div class="ui field fluid" >
                 <label>G</label>
-                <input type="text" name="G" id="gValue" class="input-bar">
+                <input type="text" name="G" id="gValue" class="input-bar" onchange="able()">
             </div>
             <div class="field fluid">
                 <label>B</label>
-                <input type="text" name="B" id="bValue" class="input-bar">
+                <input type="text" name="B" id="bValue" class="input-bar" onchange="able()">
             </div>
             <br />
             <br />
-            <button class="ui button" type="submit" onclick="btnHandle()">Transfer</button>
+            <button class="ui submit button" id="submit" type="submit" onclick="btnHandle()" disabled="disabled">Transfer</button>
+            <div class="ui error message"></div>
         </form>
     </div>
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/semantic-ui/2.1.8/semantic.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="formcheck.js"></script>
 </body>
 
 </html>
