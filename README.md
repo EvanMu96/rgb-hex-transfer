@@ -1,12 +1,11 @@
-# rgb--hex-transfer
-CSS颜色RGB、16进制转换器
+# rgb-hex-transfer
+CSS颜色RGB/16进制转换器(Archieved)
 
-## why
-PS取色获得的是颜色的RGB值，在CSS中我需要16进制的值，于是写了一个简单的计算器
-
+## intro
+从 RGB 颜色转换到16进制的值（现在大部分 CSS editor 都支持这个功能了
   
-## try it
+## 
 http://blog.senevan.com/rgb--hex-transfer/
 
-##dependencies
+## dependencies
   semantic-ui
